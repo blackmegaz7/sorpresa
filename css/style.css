@@ -5,15 +5,41 @@
 body{
     color: azure;
     width: 100%;
-    height: 100vh;
+    height: 82vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: black;
+    /* padding-top: -30; */
 }
+
+
+
+.botones{
+    padding: 9px;
+    border-radius: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+.botones a{
+    background-color: #00b7ff;
+    padding: 9px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+
+}
+
+.botones a:focus{
+    background-color: rgb(50, 194, 194);
+}
+
 .greetings{
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: 900;
 }
 .greetings > span{
@@ -22,10 +48,10 @@ body{
 @keyframes glow{
     0%, 100%{
         color: #fff;
-        text-shadow: 0 0 12px #fbff00, 0 0 50px #fbff00, 0 0 100px #fbff00;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
     }
     10%, 90%{
-        color: #696565;
+        color: #111;
         text-shadow: none;
     }
 }
@@ -40,6 +66,9 @@ body{
 }
 .greetings > span:nth-child(5){
     animation-delay: .8s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: 1s;
 }
 
 .description{
@@ -56,16 +85,16 @@ body{
 @media screen and (max-width:574px){
     .greetings{
         display: block;
-        font-size: 3rem;
-        font-weight: 500;
+        font-size: 4rem;
+        font-weight: 800;
         text-align: center;
     }
     .description{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     
     .button a{
-        font-size: .5rem;
+        font-size: 5rem;
     }
 }
 
@@ -75,7 +104,7 @@ body{
 
 /* Estilo para el botón */
 .button button {
-    background-color: yellow; /* Fondo amarillo */
+    background-color: rgb(0, 15, 22); /* Fondo amarillo */
     border: none; /* Sin bordes */
     padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
     font-size: 18px; /* Tamaño de fuente */
@@ -93,8 +122,6 @@ body{
   
   /* Efecto de resplandor al pasar el cursor sobre el botón */
   .button button:hover {
-    background-color: orange; /* Cambia el color de fondo al pasar el mouse a naranja */
+    background-color: rgb(1, 219, 248); /* Cambia el color de fondo al pasar el mouse a naranja */
     box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
   }
-  
-  
